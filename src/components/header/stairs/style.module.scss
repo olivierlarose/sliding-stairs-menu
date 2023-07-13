@@ -1,0 +1,25 @@
+.stairs{
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    transition: all 1s;
+    pointer-events: none;
+}
+.stair{
+    width: 20vw;
+    height: 100%;
+    background-color: black;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+}
+
+@media only screen and (min-width: 600px) {
+}

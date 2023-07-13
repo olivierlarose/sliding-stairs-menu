@@ -1,0 +1,65 @@
+.button{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+
+    p{
+        display: none;
+        color: white;
+        margin: 0px;
+        text-transform: uppercase;
+        transition: color 0.5s;
+    }
+
+    svg{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        line{
+            transition: stroke 0.5s;
+        }
+    }
+
+    .background{
+        background-color: #D3FD50;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        height: 0;
+        transition: height 0.3s;
+    }
+
+    &:hover{
+        p{
+            color: black;
+        }
+        svg{
+            line{
+                stroke: black;
+            }
+        }
+        .background{
+            height: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .button{
+        height: 120px;
+        p{
+            display: block;
+        }
+    }
+}
